@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Lista de Filmes
 
-## Getting Started
+## Descrição do Projeto
 
-First, run the development server:
+O **"Lista de Filmes"** é um aplicativo web desenvolvido para exibir uma lista de filmes com suas respectivas imagens e links para assisti-los. O projeto foi desenvolvido no início do período da faculdade como um trabalho acadêmico valendo nota, com o objetivo de praticar conceitos básicos de React, Next.js e estilização com Tailwind CSS.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Estrutura do Projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O projeto é composto pelos seguintes principais componentes:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Header**: Exibe um logotipo e um título no topo da página.
+- **CardFilm**: Representa um filme individual com uma imagem, título e link para assistir.
+- **Footer**: Contém uma mensagem de direitos autorais na parte inferior da página.
+- **Home**: A página principal que apresenta uma lista de filmes utilizando o componente `CardFilm`.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tecnologias Utilizadas
 
-## Learn More
+- **React**: Biblioteca para construção de interfaces de usuário.
+- **Next.js**: Framework React para renderização do lado do servidor e geração de sites estáticos.
+- **Tailwind CSS**: Framework CSS para estilos utilitários e design responsivo.
+- **TypeScript**: Linguagem de programação que adiciona tipagem estática ao JavaScript.
 
-To learn more about Next.js, take a look at the following resources:
+## Arquivos Principais
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **`components/CardFilm/CardFilm.tsx`**: Componente para exibir informações de um filme. Recebe `title`, `image`, e `link` como props.
+- **`components/Header/header.tsx`**: Componente que exibe o cabeçalho da página com o logotipo e o título.
+- **`components/Footer/footer.tsx`**: Componente que exibe o rodapé com a mensagem de direitos autorais.
+- **`pages/index.tsx`**: Página principal que utiliza o componente `CardFilm` para listar vários filmes.
+- **`styles/globals.css`**: Arquivo de estilo global que inclui a configuração do Tailwind CSS e ajustes de tema.
+- **`styles.css`**: Arquivo de estilo para componentes individuais como `CardFilm`, `Header`, e `Footer`.
